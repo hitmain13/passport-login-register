@@ -44,7 +44,8 @@ module.exports.POSTregister = function (req, res) {
                         newUser
                             .save()
                             .then(() => {
-                                req.flash('success_msg', `A conta foi criada com sucesso e pode fazer o login.`)
+                                console.log("Novo usuário criado:", email)
+                                req.flash('success_msg', `A conta foi criada com sucesso e poderá fazer o login.`)
                                 res.redirect('/users/login')
                             })
                             .catch(err => console.log(err))

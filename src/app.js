@@ -40,6 +40,7 @@ app.use((req, res, next) => {
     // 'res.locals'->é a forma de criar variáveis ou funções globais
     res.locals.success_msg = req.flash("success_msg");
     res.locals.error_msg = req.flash('error_msg');
+
     // passport tem as suas próprias flash-msgs que passa em 'flash('error')', assim faço overwrite
     res.locals.error = req.flash('error');
     next();
@@ -51,15 +52,16 @@ const index = require('./routes/index');
 app.use('/users', users);
 app.use('/', index);
 
-app.listen(3003, () => {
-    console.log('Listening on port 3003')
-})
+let port = 5000;
+app.listen(process.env.PORT || port, () =>{
+   console.log('Servidor em execução na porta: '+ port);
+});
 
 mongoose.connect('mongodb+srv://mongodbteste:mongodbteste@cluster0.drqj8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 mongoose.connection.on('connected', () => {
-    console.log("Mongo server is on...")
+    console.log("Servidor Mongo up...")
 })
 mongoose.connection.on('error', (err) => {
-    console.log('Database error ' + err);
+    console.log('MongoDatabase error ' + err);
 });
 
