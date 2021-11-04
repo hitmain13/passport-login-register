@@ -24,7 +24,7 @@ Frontend:
  - Bootstrap (Bootswatch);
  - FontAwesome;
  - Embedded JavaScript templates.
- - 
+ 
 ---
 
 ### ✈️ Accessing the project
