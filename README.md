@@ -1,11 +1,13 @@
 <h1 align="center">
-# Register-login system with Passport
+⭐ Register-login with Passport ⭐
 </h1>
 
 !["thumbnail"](https://github.com/hitmain13/passport-login-register/blob/main/src/public/assets/home_thumb.png)
 
+<h3 align="center">
 It's a simple register/login application using Passport and Node.js. The app contains session middleware and an encrypted password authentication, saving all the users on Atlas Mongo Database. 
-
+<h3>
+           
 ### Technologies used:
 
 Backend:
