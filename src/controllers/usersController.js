@@ -33,10 +33,8 @@ module.exports.POSTregister = function (req, res) {
                 newUser.password = hash;
                 newUser
                     .save()
-                    .then(() => {
-                        req.flash(
-                            'success_msg','Você está registrado!'
-                           );
+                    .then(user => {
+                        req.flash('success_msg', `A conta foi criada com sucesso. Faça o login.`)
                         res.redirect('/users/login')
                     })
                     .catch(err => console.log(err))
