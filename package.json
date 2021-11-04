@@ -1,14 +1,17 @@
 {
   "name": "login-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app using passport to realize register and login of users.",
+  "engines": {
+    "node": "v14.17.6"
+  },
   "main": "app.js",
   "scripts": {
     "start": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Fábio Hideaki Matsumoto",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
