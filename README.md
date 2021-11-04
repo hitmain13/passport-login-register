@@ -1,3 +1,31 @@
-# passport-login-register
-A login/register system using Passport and API REST + Node.js + Express-session middlaware with encrypt password authentication (bcrypt), saving all users on clusted Mongo database.
-Front-end using bootstrap (bootswatch) + fontAwesome and .ejs.
+<h1 align="center">
+# Register-login system with Passport
+</h1>
+
+!["thumbnail"]()
+
+It's a simple register/login application using Passport and Node.js. The app contains session middleware and an encrypted password authentication, saving all the users on Atlas Mongo Database. 
+
+### Technologies used:
+
+Backend:
+ - Node.js;
+ - Passport;
+ - API REST;
+ - Express;
+ - Session;
+ - Flash;
+ - Bcrypt;
+ - Mongoose.
+
+Frontend:
+ - Bootstrap (Bootswatch);
+ - FontAwesome;
+ - Embedded JavaScript templates.
+ - 
+---
+
+### ✈️ Accessing the project
+
+You can click below and access the project by Heroku:
+https://sistema-login-registro.herokuapp.com/
