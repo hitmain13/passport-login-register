@@ -2,9 +2,12 @@ const express = require('express');
 const session = require('express-session');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
-const passport = require('passport');
 const flash = require('connect-flash');
+const passport = require('passport');
+
 const app = express();
+
+require('./config/passport')(passport);
 
 var path = require('path');
 
@@ -46,17 +49,17 @@ const users = require('./routes/users');
 const index = require('./routes/index');
 // app.use('/api', api);
 app.use('/users', users);
-app.use('/home', index);
-
+app.use('/', index);
 
 app.listen(3003, () => {
     console.log('Listening on port 3003')
 })
 
-mongoose.connect('mongodb+srv://hitmain13:hideaki13@matsumotodb.flcpa.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://mongodbteste:mongodbteste@cluster0.drqj8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 mongoose.connection.on('connected', () => {
     console.log("Mongo server is on...")
 })
 mongoose.connection.on('error', (err) => {
     console.log('Database error ' + err);
 });
+
