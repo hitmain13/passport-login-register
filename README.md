@@ -7,7 +7,7 @@
 <h3 align="center">
 It's a simple register/login application using Passport and Node.js. The app contains session middleware and an encrypted password authentication, saving all the users on Atlas Mongo Database. 
 <h3>
----
+ 
 ### Technologies used:
 
 Backend:
