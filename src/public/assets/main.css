@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Cabin";
+  src: url("../fonts/Cabin/Cabin-Regular.ttf");
+}
+
+html {
+  display: block;
+  background: #271e43;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Cabin";
+}
+
+hr {
+  width: 100%;
+  margin: 1rem 0 0;
+}
+
+body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+}
+
+body #container #home {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: ghostwhite;
+  padding: 3rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 320px;
+}
+
+body #container #home #tittle {
+  margin: auto;
+}
+
+body #container #home p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+body .md {
+  -webkit-transform: translateX(-50%) translateY(-25%);
+          transform: translateX(-50%) translateY(-25%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .md-show .md {
+  -webkit-transform: translateX(-50%) translateY(-55%);
+          transform: translateX(-50%) translateY(-55%);
+}
+
+body .md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+body .md-overlay.md-show {
+  opacity: 1;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body .md-overlay .md {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: ghostwhite;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  z-index: 4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .md-overlay .md .md-content,
+body .md-overlay .md form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .md-overlay .md .close {
+  float: right;
+  font-size: 2em;
+}
+
+body .md-overlay .md .close:hover {
+  cursor: pointer;
+}
+
+body .md-overlay .md .md-content input {
+  display: block;
+  margin: 0.4rem;
+}
+
+input {
+  border: 1px solid #dbdbe1;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: "Cabin";
+  color: rgba(0, 0, 0, 0.9);
+}
+
+input:first-child {
+  margin: 1rem 0 0 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.btn:hover {
+  cursor: pointer;
+  background: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  padding: auto;
+  margin: auto;
+  color: ghostwhite;
+  text-align: center;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
