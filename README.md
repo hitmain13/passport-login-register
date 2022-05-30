@@ -7,6 +7,7 @@
 <h3 align="center">
 It's a simple register/login application using Passport and Node.js. The app contains session middleware and an encrypted password authentication, saving all the users on Atlas Mongo Database. 
  
+ 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/higorpo/higorflix/blob/master/LICENSE) [![siga-me](https://img.shields.io/github/followers/hitmain13?label=Siga-me&style=social)]()
 <h3>
  
